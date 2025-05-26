@@ -1,0 +1,14 @@
+@startuml
+actor Usuario
+participant "RelatorioProdService"
+participant "IA Análise de Dados"
+participant "Banco de Dados" as BD
+participant "Storage de Arquivos"
+
+Usuario -> RelatorioProdService : Solicita relatório de produtividade
+RelatorioProdService -> BD : Recupera dados de tarefas, foco, pausas, interações
+RelatorioProdService -> "IA Análise de Dados" : Processa e analisa os dados
+"IA Análise de Dados" --> RelatorioProdService : Retorna métricas analisadas
+RelatorioProdService -> "Storage de Arquivos" : Gera e armazena relatório (PDF/HTML)
+RelatorioProdService -> Usuario : Retorna link para o relatório
+@enduml
