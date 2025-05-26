@@ -1,0 +1,83 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #F0F8FF
+  BorderColor DarkBlue
+  ArrowColor Black
+}
+
+actor "Usuário" as Usuario
+actor "Administrador" as Admin
+actor "Sistema de Calendário" as Calendario
+actor "Armazenamento em Nuvem" as Storage
+actor "Serviço de IA" as IA
+
+rectangle "Plataforma de Trabalho Remoto com IA" {
+  
+  package "Relatórios de Produtividade" {
+    usecase "Solicitar Relatório de Produtividade" as RF01
+    usecase "Visualizar Relatório Gerado" as RF01B
+  }
+
+  package "Agendamento Inteligente" {
+    usecase "Solicitar Agendamento de Reunião" as RF02
+    usecase "Ver Sugestões de Horário" as RF02B
+  }
+
+  package "Resumo de Reuniões" {
+    usecase "Gravar Reunião" as RF03A
+    usecase "Gerar Resumo Automático" as RF03
+    usecase "Visualizar Resumo" as RF03B
+  }
+
+  package "Gestão de Tarefas com IA" {
+    usecase "Consultar Tarefas Recomendadas" as RF04
+  }
+
+  package "Brainstorming com IA" {
+    usecase "Iniciar Sessão de Brainstorming" as RF05
+    usecase "Enviar Palavra-chave" as RF05B
+    usecase "Receber Ideias Sugeridas" as RF05C
+  }
+
+}
+
+' Relações Usuário
+Usuario --> RF01
+Usuario --> RF01B
+Usuario --> RF02
+Usuario --> RF02B
+Usuario --> RF03A
+Usuario --> RF03B
+Usuario --> RF04
+Usuario --> RF05
+Usuario --> RF05B
+Usuario --> RF05C
+
+' Admin pode acompanhar produtividade
+Admin --> RF01B
+
+' Sistema de IA
+IA --> RF01 : <<include>>
+IA --> RF02 : <<include>>
+IA --> RF03 : <<include>>
+IA --> RF04 : <<include>>
+IA --> RF05C : <<include>>
+
+' Storage externo
+Storage --> RF01B : <<include>>
+Storage --> RF03B : <<include>>
+
+' Sistema de Calendário
+Calendario --> RF02 : <<include>>
+
+' Inclusões e extensões
+RF01 --> RF01B : <<extend>>
+RF02 --> RF02B : <<extend>>
+RF03A --> RF03 : <<include>>
+RF03 --> RF03B : <<extend>>
+RF05 --> RF05B : <<include>>
+RF05B --> RF05C : <<include>>
+
+@enduml
