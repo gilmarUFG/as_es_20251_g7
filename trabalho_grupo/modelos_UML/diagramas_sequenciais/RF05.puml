@@ -1,0 +1,17 @@
+@startuml
+actor Usuario
+participant "AssistenteBrainstormingService"
+participant "LLM / NLP Engine"
+
+Usuario -> AssistenteBrainstormingService : Inicia sessão de brainstorming
+Usuario -> AssistenteBrainstormingService : Envia palavras-chave
+AssistenteBrainstormingService -> "LLM / NLP Engine" : Gera ideias a partir das palavras-chave
+"LLM / NLP Engine" -> AssistenteBrainstormingService : Retorna ideias sugeridas
+AssistenteBrainstormingService -> Usuario : Apresenta sugestões de ideias
+loop Sessão ativa
+    Usuario -> AssistenteBrainstormingService : Envia novas palavras-chave/refina ideias
+    AssistenteBrainstormingService -> "LLM / NLP Engine" : Atualiza sugestões
+    "LLM / NLP Engine" -> AssistenteBrainstormingService : Novas ideias
+    AssistenteBrainstormingService -> Usuario : Exibe novas sugestões
+end
+@enduml

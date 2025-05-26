@@ -1,0 +1,12 @@
+@startuml
+actor Usuario
+participant "RecomendacaoTarefasService"
+participant "IA Análise de Histórico"
+participant "Banco de Dados Não Relacional"
+
+Usuario -> RecomendacaoTarefasService : Acessa a plataforma (início do dia)
+RecomendacaoTarefasService -> "Banco de Dados Não Relacional" : Consulta histórico de atividades do usuário
+RecomendacaoTarefasService -> "IA Análise de Histórico" : Processa dados e define prioridades
+"IA Análise de Histórico" -> RecomendacaoTarefasService : Retorna lista priorizada de tarefas
+RecomendacaoTarefasService -> Usuario : Apresenta lista recomendada de tarefas
+@enduml
