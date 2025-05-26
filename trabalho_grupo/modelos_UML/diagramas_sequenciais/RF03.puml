@@ -1,0 +1,19 @@
+@startuml
+actor Usuario
+participant "Sistema de Videoconferência" as Video
+participant "ResumoIAEngine"
+participant "Transcrição de Áudio"
+participant "LLM / NLP Engine"
+participant "Storage de Arquivos"
+participant "Banco de Dados"
+
+Usuario -> Video : Encerra reunião
+Video -> ResumoIAEngine : Envia gravação
+ResumoIAEngine -> "Transcrição de Áudio" : Transcreve conteúdo
+"Transcrição de Áudio" -> ResumoIAEngine : Texto transcrito
+ResumoIAEngine -> "LLM / NLP Engine" : Gera resumo
+"LLM / NLP Engine" -> ResumoIAEngine : Texto resumido
+ResumoIAEngine -> "Storage de Arquivos" : Armazena resumo
+ResumoIAEngine -> "Banco de Dados" : Registra metadados
+ResumoIAEngine -> Usuario : Notifica com link para o resumo
+@enduml
