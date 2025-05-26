@@ -1,0 +1,48 @@
+@startuml
+package "Frontend" {
+  [WebApp] 
+  [MobileApp]
+}
+
+package "Api Gateway" {
+  [API Gateway]
+}
+
+package "Microsserviços" {
+  [RelatorioProdService]
+  [AgendamentoService]
+  [ResumoIAEngine]
+  [RecomendacaoTarefasService]
+  [AssistenteBrainstormingService]
+}
+
+package "Módulos de IA" {
+  [LLM / NLP Engine]
+  [IA Análise Preditiva]
+}
+
+package "Infraestrutura" {
+  [Banco de Dados Relacional]
+  [Banco de Dados Não Relacional]
+  [Storage de Arquivos]
+}
+
+WebApp --> [API Gateway]
+MobileApp --> [API Gateway]
+
+[API Gateway] --> [RelatorioProdService]
+[API Gateway] --> [AgendamentoService]
+[API Gateway] --> [ResumoIAEngine]
+[API Gateway] --> [RecomendacaoTarefasService]
+[API Gateway] --> [AssistenteBrainstormingService]
+
+[RelatorioProdService] --> [IA Análise Preditiva]
+[AgendamentoService] --> [IA Análise Preditiva]
+[ResumoIAEngine] --> [LLM / NLP Engine]
+[RecomendacaoTarefasService] --> [IA Análise Preditiva]
+[AssistenteBrainstormingService] --> [LLM / NLP Engine]
+
+[RelatorioProdService] --> [Banco de Dados Relacional]
+[ResumoIAEngine] --> [Storage de Arquivos]
+[RecomendacaoTarefasService] --> [Banco de Dados Não Relacional]
+@enduml
