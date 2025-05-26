@@ -1,0 +1,43 @@
+@startuml
+node "Usuário (Navegador ou App)" {
+  component "Frontend Web/Mobile"
+}
+
+node "Servidor Backend (API Gateway)" {
+  component "API Gateway"
+}
+
+node "Servidor de Microsserviços" {
+  node "Container: RelatorioProdService"
+  node "Container: AgendamentoService"
+  node "Container: ResumoIAEngine"
+  node "Container: RecomendacaoTarefasService"
+  node "Container: AssistenteBrainstormingService"
+}
+
+cloud "Serviços de IA (Nuvem)" {
+  component "OpenAI API / HuggingFace"
+}
+
+database "Banco de Dados" {
+  component "PostgreSQL"
+  component "MongoDB"
+}
+
+cloud "Storage" {
+  component "Amazon S3 / Cloud Storage"
+}
+
+"Frontend Web/Mobile" --> "API Gateway"
+"API Gateway" --> "RelatorioProdService"
+"API Gateway" --> "AgendamentoService"
+"API Gateway" --> "ResumoIAEngine"
+"API Gateway" --> "RecomendacaoTarefasService"
+"API Gateway" --> "AssistenteBrainstormingService"
+
+"ResumoIAEngine" --> "OpenAI API / HuggingFace"
+"AssistenteBrainstormingService" --> "OpenAI API / HuggingFace"
+"RelatorioProdService" --> "PostgreSQL"
+"RecomendacaoTarefasService" --> "MongoDB"
+"ResumoIAEngine" --> "Amazon S3 / Cloud Storage"
+@enduml
