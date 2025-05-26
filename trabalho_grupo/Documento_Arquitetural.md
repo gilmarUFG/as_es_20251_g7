@@ -1,6 +1,6 @@
 
 # 📄 Documento de Arquitetura  
-## Plataforma de Trabalho Remoto com IA — 1ª Iteração
+## Plataforma de Trabalho Remoto com IA — (1ª Iteração)
 
 ---
 
