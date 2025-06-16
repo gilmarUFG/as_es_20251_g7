@@ -1,0 +1,50 @@
+@startuml
+node "Usuário (Navegador ou App)" {
+  component "Frontend Web/Mobile"
+}
+
+node "Servidor Backend (API Gateway)" {
+  component "API Gateway"
+}
+
+node "Servidor de Microsserviços" {
+  node "Container: SobrecargaService"
+  node "Container: PraticasEmpresaService"
+  node "Container: NotificacoesService"
+  node "Container: TradutorService"
+  node "Container: AssistenteDuvidasService"
+}
+
+cloud "Serviços de IA (Nuvem)" {
+  component "OpenAI API / HuggingFace"
+}
+
+database "Banco de Dados" {
+  component "PostgreSQL"
+  component "MongoDB"
+}
+
+cloud "Storage" {
+  component "Amazon S3 / Cloud Storage"
+}
+
+"Frontend Web/Mobile" --> "API Gateway"
+"API Gateway" --> "SobrecargaService"
+"API Gateway" --> "PraticasEmpresaService"
+"API Gateway" --> "NotificacoesService"
+"API Gateway" --> "TradutorService"
+"API Gateway" --> "AssistenteDuvidasService"
+
+"SobrecargaService" --> "PostgreSQL"
+"PraticasEmpresaService" --> "MongoDB"
+"NotificacoesService" --> "PostgreSQL"
+"AssistenteDuvidasService" --> "MongoDB"
+
+"SobrecargaService" --> "OpenAI API / HuggingFace"
+"PraticasEmpresaService" --> "OpenAI API / HuggingFace"
+"NotificacoesService" --> "OpenAI API / HuggingFace"
+"TradutorService" --> "OpenAI API / HuggingFace"
+"AssistenteDuvidasService" --> "OpenAI API / HuggingFace"
+
+"AssistenteDuvidasService" --> "Amazon S3 / Cloud Storage"
+@enduml
