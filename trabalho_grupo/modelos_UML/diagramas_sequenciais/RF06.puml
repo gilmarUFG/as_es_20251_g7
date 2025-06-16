@@ -1,0 +1,17 @@
+@startuml
+actor Gestor
+participant "Frontend" as FE
+participant "API Gateway" as APIGW
+participant "Serviço de Sobrecarga" as Sobrecarga
+participant "Orquestrador de IA" as OrqIA
+participant "Banco de Dados" as DB
+
+Gestor -> FE : Acessa dashboard da equipe
+FE -> APIGW : GET /sobrecarga/equipe
+APIGW -> Sobrecarga : Solicita dados de sobrecarga
+Sobrecarga -> DB : Consulta carga de trabalho e desempenho
+Sobrecarga -> OrqIA : Envia dados para análise de sobrecarga
+OrqIA --> Sobrecarga : Resposta: membros com sobrecarga
+Sobrecarga --> APIGW : Lista com sugestões de redistribuição
+APIGW --> FE : Exibe sugestões para o gestor
+@enduml
