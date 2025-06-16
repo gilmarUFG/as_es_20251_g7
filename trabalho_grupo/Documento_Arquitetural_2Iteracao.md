@@ -59,74 +59,24 @@ A arquitetura da plataforma adota uma abordagem baseada em **microsserviços**, 
 
 ## 🧱 Componentes Principais (Atualizados)
 
-Componente
-
-Descrição
-
-**API Gateway**
-
-Roteador de requisições com autenticação, controle de taxa e roteamento para os microsserviços.
-
-**Serviço de Relatórios**
-
-Geração de relatórios de produtividade com base nos dados processados por IA.
-
-**Serviço de Reuniões Inteligentes**
-
-Sugestões de horários otimizados com base em padrões comportamentais.
-
-**Serviço de Resumos**
-
-Transcrição e resumo de reuniões usando NLP.
-
-**Serviço de Recomendação de Tarefas**
-
-Sugere tarefas com base no histórico e no contexto do usuário.
-
-**Assistente de Brainstorming**
-
-Geração de ideias com LLMs (ex: GPT, LLaMA).
-
-**Serviço de Sobrecarga de Trabalho** (Novo)
-
-Detecta sobrecarga e sugere redistribuição de tarefas ao gestor.
-
-**Serviço de Práticas Corporativas** (Novo)
-
-Fornece documentação e conteúdo sobre padrões da empresa.
-
-**Serviço de Notificações Inteligentes** (Novo)
-
-Envia notificações personalizadas baseadas em comportamento.
-
-**Serviço de Tradução de Mensagens** (Novo)
-
-Traduz mensagens entre idiomas em tempo real.
-
-**Assistente de Dúvidas Gerais** (Novo)
-
-ChatBot com respostas sobre processos internos e uso da plataforma.
-
-**Orquestrador de IA**
-
-Camada que abstrai e gerencia chamadas para os modelos de IA.
-
-**Banco de Dados (SQL e NoSQL)**
-
-Armazenamento estruturado (usuários, tarefas) e não estruturado (transcrições, logs).
-
-**Serviço de Autenticação e Sessão**
-
-Gerencia login, sessões e permissões.
-
-**Armazenamento em Nuvem**
-
-Guarda arquivos como vídeos, relatórios, logs, documentos internos.
-
-**Sistema de Calendário Integrado**
-
-Integra com serviços de calendário para análise e sugestões.
-
+| Componente | Descrição |
+|--|--|
+|API Gateway  | Roteador de requisições com autenticação, controle de taxa e roteamento para os microsserviços. |
+|Serviço de Relatórios  | Geração de relatórios de produtividade com base nos dados processados por IA. |
+|Serviço de Reuniões Inteligentes  | Sugestões de horários otimizados com base em padrões comportamentais. |
+|Serviço de Resumos  | Transcrição e resumo de reuniões usando NLP. |
+|Serviço de Recomendação de Tarefas  | Sugere tarefas com base no histórico e no contexto do usuário. |
+|Assistente de Brainstorming  | Geração de ideias com LLMs (ex: GPT, LLaMA). |
+|**Serviço de Sobrecarga de Trabalho** (Novo)  | Detecta sobrecarga e sugere redistribuição de tarefas ao gestor. |
+|**Serviço de Práticas Corporativas** (Novo) | Fornece documentação e conteúdo sobre padrões da empresa. |
+|**Serviço de Notificações Inteligentes** (Novo)  | Envia notificações personalizadas baseadas em comportamento. |
+|**Serviço de Tradução de Mensagens** (Novo) | Traduz mensagens entre idiomas em tempo real.|
+|**Assistente de Dúvidas Gerais** (Novo) | ChatBot com respostas sobre processos internos e uso da plataforma. |
+| Orquestrador de IA | Camada que abstrai e gerencia chamadas para os modelos de IA. |
+| Banco de Dados (SQL e NoSQL) | Armazenamento estruturado (usuários, tarefas) e não estruturado (transcrições, logs). |
+| Serviço de Autenticação e Sessão | Gerencia login, sessões e permissões. |
+| Armazenamento em Nuvem | Guarda arquivos como vídeos, relatórios, logs, documentos internos. |
+|Sistema de Calendário Integrado | Integra com serviços de calendário para análise e sugestões. |
 ----------
 
 ## 🧩 Visões Arquiteturais
