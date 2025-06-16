@@ -1,0 +1,76 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #F0F8FF
+  BorderColor DarkBlue
+  ArrowColor Black
+}
+
+actor "Usuário" as Usuario
+actor "Administrador" as Admin
+actor "Serviço de IA" as IA
+actor "Armazenamento em Nuvem" as Storage
+
+rectangle "Plataforma de Trabalho Remoto com IA" {
+
+  package "Gestão de Carga de Trabalho" {
+    usecase "Analisar Produtividade e Carga de Tarefas" as RF06A
+    usecase "Sugerir Redistribuição de Tarefas" as RF06B
+  }
+
+  package "Onboarding e Práticas" {
+    usecase "Solicitar Ajuda sobre Processos Internos" as RF07
+    usecase "Receber Documentos ou Conteúdos Explicativos" as RF07B
+  }
+
+  package "Saúde e Bem-Estar" {
+    usecase "Detectar Atividade Prolongada" as RF08
+    usecase "Receber Notificação de Pausa" as RF08B
+  }
+
+  package "Comunicação Multilíngue" {
+    usecase "Enviar Mensagem para Outro Idioma" as RF09A
+    usecase "Receber Tradução Automática" as RF09B
+  }
+
+  package "Suporte Inteligente" {
+    usecase "Abrir Assistente Virtual de Dúvidas" as RF10
+    usecase "Receber Resposta Instantânea" as RF10B
+  }
+
+}
+
+' Relações Usuário
+Usuario --> RF06A
+Usuario --> RF06B
+Usuario --> RF07
+Usuario --> RF07B
+Usuario --> RF08
+Usuario --> RF08B
+Usuario --> RF09A
+Usuario --> RF09B
+Usuario --> RF10
+Usuario --> RF10B
+
+' Relações Admin
+Admin --> RF06B
+
+' Relações IA
+IA --> RF06A : <<include>>
+IA --> RF06B : <<include>>
+IA --> RF07B : <<include>>
+IA --> RF08B : <<include>>
+IA --> RF09B : <<include>>
+IA --> RF10B : <<include>>
+
+' Armazenamento
+Storage --> RF10B : <<include>>
+
+' Inclusões e Extensões
+RF06A --> RF06B : <<extend>>
+RF07 --> RF07B : <<include>>
+RF08 --> RF08B : <<extend>>
+RF09A --> RF09B : <<extend>>
+RF10 --> RF10B : <<include>>
+@enduml
