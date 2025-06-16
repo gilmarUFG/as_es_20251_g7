@@ -178,30 +178,13 @@ Os novos serviços serão implantados como contêineres isolados, com integraç�
 
 Os seguintes modelos e técnicas serão utilizados:
 
-Funcionalidade
-
-Tipo de IA
-
-Sobrecarga de Trabalho
-
-Modelos de classificação e clustering de carga e performance
-
-Práticas da Empresa
-
-Busca semântica e ranqueamento de conteúdo
-
-Notificações
-
-Análise preditiva de comportamento
-
-Tradução
-
-Modelos de Tradução Neural (ex: MarianMT, Google Translate API)
-
-Chatbot de Dúvidas
-
-LLM + Retrieval-Augmented Generation (RAG)
-
+| Funcionalidade | Tipo de IA  |
+|--|--|
+| Sobrecarga de Trabalho | Modelos de classificação e clustering de carga e performance |
+| Práticas da Empresa | Busca semântica e ranqueamento de conteúdo |
+| Notificações | Análise preditiva de comportamento |
+| Tradução | Modelos de Tradução Neural (ex: MarianMT, Google Translate API) |
+| Chatbot de Dúvidas | LLM + Retrieval-Augmented Generation (RAG) |
 ----------
 
 ## 🗂️ Padrões Utilizados
