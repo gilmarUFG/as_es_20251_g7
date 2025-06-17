@@ -1,0 +1,17 @@
+@startuml
+actor Colaborador
+participant "Frontend" as FE
+participant "API Gateway" as APIGW
+participant "Assistente de Dúvidas" as Assistente
+participant "Orquestrador de IA" as OrqIA
+participant "Banco de Dados" as DB
+
+Colaborador -> FE : Digita dúvida
+FE -> APIGW : POST /assistente
+APIGW -> Assistente : Encaminha pergunta
+Assistente -> DB : Consulta base de conhecimento
+Assistente -> OrqIA : Solicita resposta gerada
+OrqIA --> Assistente : Resposta em linguagem natural
+Assistente --> APIGW : Envia resposta
+APIGW --> FE : Exibe resposta ao colaborador
+@enduml
