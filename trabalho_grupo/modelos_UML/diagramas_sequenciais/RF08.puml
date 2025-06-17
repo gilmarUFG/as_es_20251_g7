@@ -1,0 +1,13 @@
+@startuml
+actor Sistema
+participant "Serviço de Notificações" as Notificacoes
+participant "Orquestrador de IA" as OrqIA
+participant "Banco de Dados" as DB
+participant "Frontend" as FE
+
+Sistema -> Notificacoes : Evento: atividade contínua detectada
+Notificacoes -> DB : Coleta padrões do usuário
+Notificacoes -> OrqIA : Avalia necessidade de notificação
+OrqIA --> Notificacoes : Recomendação: enviar pausa
+Notificacoes -> FE : Push: "Que tal uma pausa?"
+@enduml

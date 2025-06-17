@@ -1,0 +1,16 @@
+@startuml
+actor UsuarioA
+actor UsuarioB
+participant "Frontend" as FE
+participant "API Gateway" as APIGW
+participant "Serviço de Tradução" as Tradutor
+participant "Orquestrador de IA" as OrqIA
+
+UsuarioA -> FE : Envia mensagem (em inglês)
+FE -> APIGW : POST /mensagem
+APIGW -> Tradutor : Solicita tradução p/ idioma de UsuarioB
+Tradutor -> OrqIA : Envia texto e idiomas
+OrqIA --> Tradutor : Retorna tradução (em português)
+Tradutor --> APIGW : Entrega mensagem traduzida
+APIGW -> FE : Entrega a mensagem a UsuarioB (em português)
+@enduml

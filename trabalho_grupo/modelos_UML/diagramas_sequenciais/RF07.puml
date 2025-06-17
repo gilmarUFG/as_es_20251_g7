@@ -1,0 +1,17 @@
+@startuml
+actor Colaborador
+participant "Frontend" as FE
+participant "API Gateway" as APIGW
+participant "Serviço de Práticas" as Praticas
+participant "Orquestrador de IA" as OrqIA
+participant "Banco de Dados" as DB
+
+Colaborador -> FE : Busca práticas da empresa
+FE -> APIGW : GET /praticas
+APIGW -> Praticas : Encaminha solicitação
+Praticas -> DB : Recupera perfil do usuário
+Praticas -> OrqIA : Solicita recomendação semântica
+OrqIA --> Praticas : Lista de conteúdos recomendados
+Praticas --> APIGW : Retorna práticas sugeridas
+APIGW --> FE : Exibe práticas ao colaborador
+@enduml
