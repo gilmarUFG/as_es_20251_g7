@@ -1,0 +1,269 @@
+commit e74cf8385a4029e3196656e097c6e4f68e152942
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon Jun 30 11:10:27 2025 -0300
+
+    update repository
+
+commit 97189809da91dea042bcc6c49586571fac3b1bd2
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon Jun 30 10:43:33 2025 -0300
+
+    update repository
+
+commit da61ca9cce0fce5b759e2ad0ca1d112da7635c35
+Merge: f863522 a5bfd09
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon Jun 30 10:33:33 2025 -0300
+
+    Merge branch 'estudante'
+
+commit a5bfd09f59a87e8bef49b12f91e3768b468cf234
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 30 10:12:57 2025 -0300
+
+    Rename readme_folder_tg.md to README.md
+
+commit 9684251ab0f612e0f681ee003cc8868feb144072
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 30 10:11:57 2025 -0300
+
+    Update readme_folder_tg.md
+
+commit f8635222ed3fc30f41bb1d3e522947cec4f1ddd6
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Wed Jun 25 20:14:01 2025 -0300
+
+    corrigindo atividades
+
+commit 68dbf7754d55eb918ee3da47e04746942f9d6006
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Tue Jun 17 09:21:03 2025 -0300
+
+    Add RF07, RF08 e RF09
+
+commit 0951b4cdc55e400fe3216246a7e4f43a4db8af5d
+Author: Guilherme Dutra <131313588+guiilhermegdm@users.noreply.github.com>
+Date:   Mon Jun 16 21:23:42 2025 -0300
+
+    Add RF10
+
+commit 2365665e0b803940d0e4619ef5b8ed20baf0cb55
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon Jun 16 20:49:03 2025 -0300
+
+    Update: diagrama de sequencia RF06
+
+commit 446a73aa4166b2ccb369f71229881b178f368832
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon Jun 16 20:45:48 2025 -0300
+
+    Update: diagrama de casos de uso 2 iteracao
+
+commit b03ee2568a1b82fa7d94d722f4f3baebfdcaed41
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 16 09:24:16 2025 -0300
+
+    Update Topico de IA
+
+commit fd3935d94639b2efc6938cf606fdea5fb2c367f3
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 16 09:21:44 2025 -0300
+
+    Update Componentes Principais
+
+commit c39f396c104fa643a7da7f0c53f5a178ee87a263
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 16 09:11:38 2025 -0300
+
+    Create Documento_Arquitetural_2Iteracao.md
+    
+    Documento arquitetural atualizado conforme a 2ª iteração
+
+commit 0d7fc61d9eb3dfcd8dd47e9d0b0889fdc034b87f
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 16 08:45:13 2025 -0300
+
+    Create diagrama_implantacao_2iteracao.puml
+
+commit 00fe5c113edf7c9100577b234ca448c3bf06cf02
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon Jun 16 08:43:32 2025 -0300
+
+    Create diagrama_componentes_2iteracao.puml
+    
+    Diagrama de componentes da 2º Iteração
+
+commit 3e11b678ffc32a566013ea405aab28a97ade61eb
+Merge: 6909b4e 7a4118a
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon May 26 19:13:05 2025 -0300
+
+    Merge branch 'main' into estudante
+
+commit 7a4118aa0cb004fd5d422d6543289013c99fa266
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Mon May 26 19:09:31 2025 -0300
+
+    update repository
+
+commit 6909b4e120acb0aca2d5725935455c9587899328
+Author: mikaeljunior.dev <mikaeljunior.dev@gmail.com>
+Date:   Mon May 26 18:53:35 2025 -0300
+
+    ⬆feature: add rf_04 and rf_05
+
+commit 8041a37fd39e25fd900d7f470a4af083f66101b7
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon May 26 18:46:04 2025 -0300
+
+    seq diagram do rf1
+
+commit f516517ffa8df1b207a90212d522908775659e5f
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon May 26 18:45:01 2025 -0300
+
+    Delete trabalho_grupo/modelos_UML/diagramas_sequenciais/RF01.puml
+
+commit b5b0494b7b297e9b0d2c17f64d62fd3392f0fb19
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon May 26 17:08:50 2025 -0300
+
+    diagrama de implantacao da primeira iteracao
+
+commit 98944d9ec8fca2166707b91e1595918433aa485d
+Author: Guilherme Dutra <131313588+guiilhermegdm@users.noreply.github.com>
+Date:   Mon May 26 15:10:36 2025 -0300
+
+    Create RF03.puml
+
+commit 442a3c20cfc9bfbede851128dfd1a769dc2e59c4
+Author: Guilherme Dutra <131313588+guiilhermegdm@users.noreply.github.com>
+Date:   Mon May 26 15:09:45 2025 -0300
+
+    Create RF02.puml
+
+commit e010d161e1d39ecba532d8b02b12bf58083295de
+Author: Guilherme Dutra <131313588+guiilhermegdm@users.noreply.github.com>
+Date:   Mon May 26 15:09:23 2025 -0300
+
+    Delete trabalho_grupo/modelos_UML/RF02.puml
+
+commit 447a209908660333079c34e4764cf8f1e94941a9
+Author: Guilherme Dutra <131313588+guiilhermegdm@users.noreply.github.com>
+Date:   Mon May 26 15:08:42 2025 -0300
+
+    Create RF02.puml
+
+commit 871c4e50332e382a4fe048da688359e47a93d287
+Author: Hugo Veiga Jardim <106411474+hugojardim@users.noreply.github.com>
+Date:   Mon May 26 11:00:51 2025 -0300
+
+    Update Documento_Arquitetural.md
+
+commit 5c7f142e8a7193ab607c7b494035b47b45e2e36a
+Author: Hugo Veiga Jardim <106411474+hugojardim@users.noreply.github.com>
+Date:   Mon May 26 10:54:48 2025 -0300
+
+    Add files via upload
+
+commit 0e6bf4e3e8839fcd91e224d32b607fbaad6246f5
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon May 26 10:31:00 2025 -0300
+
+    Create RF01.puml
+    
+    Criação do diretorio para os diagramas sequenciais de cada requisito
+
+commit 56c48f18d51e12b079ff035085576455ef8aca06
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon May 26 09:58:44 2025 -0300
+
+    Create diagrama_componentes_1iteracao.puml
+    
+    Criação do diagrama de Componentes da 1ª iteração
+
+commit 8559ef5fcfe96cec667c67393b2ca064cd335a31
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon May 26 09:54:33 2025 -0300
+
+    Create diagrama_use_cases_1iteracao.puml
+    
+    Criação do diagrama de casos de uso da 1ª Iteração.
+
+commit c2711ab8762ea2b1897ecebd78dd9004aee2f972
+Author: Vitor Martins Castanheira <108744054+cmVitor@users.noreply.github.com>
+Date:   Mon May 5 10:53:43 2025 -0600
+
+    Add definicao do trabalho final
+    
+    Arquivo markdown com os requisitos definidos e dividos em 2 iterações
+
+commit 1a2be99c2624c35dececc0c71e510c58fa13e416
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Sun May 4 17:09:02 2025 -0300
+
+    as4 slides fundamentos arq soft
+
+commit 7ba4d476fb5a2d740b5eaa59eb228956cacf2483
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Sun May 4 15:02:00 2025 -0300
+
+    as5 infografico MDA
+
+commit 3f86f2002954a3bf040845dc7badcf3afefe6b53
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Sat Apr 19 12:49:08 2025 -0300
+
+    update repository
+
+commit fa15874234b3c77a968248b0eae2395ee7cef6ff
+Merge: b9897d6 1dca14b
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Thu Mar 27 20:57:12 2025 -0300
+
+    Merge branch 'estudante'
+
+commit 1dca14b326a02cf603f88d3f14229fe06cf441aa
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon Mar 24 21:41:03 2025 -0300
+
+    Create tarefa-pratica-aula3.md
+
+commit 7febc5a814d5fd2df7e75354d57618fdda26374e
+Author: Samuel José Evangelista Alves <112004534+SamuelJEAlves@users.noreply.github.com>
+Date:   Mon Mar 24 17:17:20 2025 -0300
+
+    atividade supervisionada 2 - encontro 3
+
+commit b9897d66e765fc6cafc43a060f5700aeba03c0ad
+Merge: 4087587 62d0151
+Author: Gilmar Ferreira Arantes <130784207+gilmarUFG@users.noreply.github.com>
+Date:   Fri Mar 21 19:07:20 2025 -0300
+
+    Merge pull request #1 from gilmarUFG/estudante
+    
+    Estudante
+
+commit 62d0151428cdd9364cb5118bf31d8c37666f05cf
+Author: Mikael Borges de Oliveira e Silva Junior <114350039+kamamijr@users.noreply.github.com>
+Date:   Mon Mar 17 21:18:54 2025 -0300
+
+    Update Matriz_mapeamento_rf_rq.md
+
+commit 8d62c179fa4af357812a958dc0e04ae3f9c6828f
+Author: Mikael Borges de Oliveira e Silva Junior <114350039+kamamijr@users.noreply.github.com>
+Date:   Mon Mar 17 21:17:41 2025 -0300
+
+    atividade de mapeamento de requisitos
+
+commit 4087587698f321af8508d0819d9b8acf8e52fb3b
+Author: Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>
+Date:   Fri Feb 28 17:00:29 2025 -0300
+
+    Update README.md file.
+
+commit fbd39755d8fb8c62be710a741c3f058a00568c7b
+Author: Gilmar Ferreira Arantes <130784207+gilmarUFG@users.noreply.github.com>
+Date:   Fri Feb 28 14:36:44 2025 -0300
+
+    Initial commit
